@@ -14,7 +14,7 @@ namespace ISM4300Grade_CS
         static void Main(string[] args)
         {
             // Ask the user for input.
-            Console.WriteLine("What grade do you wish to earn in ISM 4300?");
+            Console.Write("What grade do you wish to earn in ISM 4300? ");
 
             /* Use the try try catch block to validate user input. If the user provides bad input,
                the catch block will handle the error and a message will be displayed.
@@ -32,7 +32,7 @@ namespace ISM4300Grade_CS
 
                 /* This IF/ELSE IF/ELSE statement is used to conditionally
                    test the users input. Various options are available depending
-                   on the  grade entered by the user.
+                   on the grade entered by the user.
                 */
                 if (Grade >= 98)
                 {
