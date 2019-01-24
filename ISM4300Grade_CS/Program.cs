@@ -34,7 +34,7 @@ namespace ISM4300Grade_CS
                    test the users input. Various options are available depending
                    on the grade entered by the user.
                 */
-                if (Grade >= 98)
+                if (Grade >= 98 && Grade <= 100)
                 {
                     Console.WriteLine("You are striving for an A+");
                     Console.WriteLine("Press any key to exit.");
@@ -118,10 +118,17 @@ namespace ISM4300Grade_CS
                     Console.ReadKey(true);
                 }
 
-                else if (Grade < 60)
+                else if (Grade >= 0 && Grade < 60)
                 {
                     Console.WriteLine("You are striving for a F");
                     Console.WriteLine("Press any key to exit.");
+                    Console.ReadKey(true);
+                }
+
+                else
+                {
+                    Console.WriteLine("Enter an integer between 0 and 100 next time.");
+                    Console.WriteLine("Press any key to exit the program.");
                     Console.ReadKey(true);
                 }
             } // End of try.
