@@ -1,8 +1,8 @@
 ﻿/* 
    Author: Mikessa Fribley
    Date: 1/21/2019
-   Comments: This C# Console applicaton code demonstrates the use of
-             conditional statements after getting input from users.
+   Comments: This C# Console application code demonstrates the use of
+             a conditional statement after getting input from users.
 */
 
 using System;
@@ -16,8 +16,10 @@ namespace ISM4300Grade_CS
             // Ask the user for input.
             Console.Write("What grade do you wish to earn in ISM 4300? ");
 
-            /* Use the try try catch block to validate user input. If the user provides bad input,
-               the catch block will handle the error and a message will be displayed.
+            /* 
+               The try catch block will validate user input.
+               If an user provides bad input, the catch block
+               will handle the error and a message will be displayed.
             */
             try
             {
@@ -30,7 +32,8 @@ namespace ISM4300Grade_CS
                 */
                 int Grade = int.Parse(Input);
 
-                /* This IF/ELSE IF/ELSE statement is used to conditionally
+                /* 
+                   This IF/ELSE IF/ELSE statement is used to conditionally
                    test the users input. Various options are available depending
                    on the grade entered by the user.
                 */
@@ -48,7 +51,7 @@ namespace ISM4300Grade_CS
                     Console.ReadKey(true);
                 }
 
-                else if (Grade >= 90 && Grade < 91)
+                else if (Grade >= 90 && Grade <= 91)
                 {
                     Console.WriteLine("You are striving for an A-");
                     Console.WriteLine("Press any key to exit.");
@@ -69,7 +72,7 @@ namespace ISM4300Grade_CS
                     Console.ReadKey(true);
                 }
 
-                else if (Grade >= 80 && Grade < 81)
+                else if (Grade >= 80 && Grade <= 81)
                 {
                     Console.WriteLine("You are striving for a B-");
                     Console.WriteLine("Press any key to exit.");
@@ -128,7 +131,7 @@ namespace ISM4300Grade_CS
                 else
                 {
                     Console.WriteLine("Enter an integer between 0 and 100 next time.");
-                    Console.WriteLine("Press any key to exit the program.");
+                    Console.WriteLine("Press any key to exit the application.");
                     Console.ReadKey(true);
                 }
             } // End of try.
@@ -136,7 +139,7 @@ namespace ISM4300Grade_CS
             catch
             {
                 Console.WriteLine("Please use an integer data type next time.");
-                Console.WriteLine("Press any key to exit the program.");
+                Console.WriteLine("Press any key to exit the application.");
                 Console.ReadKey(true);
             } // End of catch.
         } // End of main.
