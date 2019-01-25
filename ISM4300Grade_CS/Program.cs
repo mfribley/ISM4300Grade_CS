@@ -23,7 +23,7 @@ namespace ISM4300Grade_CS
             */
             try
             {
-                // This variable will gather the user input.
+                // This variable will gather data from user input.
                 string Input = Console.ReadLine();
 
                 /* 
@@ -34,8 +34,8 @@ namespace ISM4300Grade_CS
 
                 /* 
                    This IF/ELSE IF/ELSE statement is used to conditionally
-                   test the users input. Various options are available depending
-                   on the grade entered by the user.
+                   test the users input. Various letter grades are available
+                   depending on the integer grade entered by the user.
                 */
                 if (Grade >= 98 && Grade <= 100)
                 {
